@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>K-Means clustering Visualiser</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="./css/kmeans.css" type="text/css" />
+    <script type="text/javascript" src="./js/kmeans.js"></script>
+  </head>
+  <body onload="init()">
+    <div id="main">
+      <h1>K-Means clustering Visualiser</h1>
+      <p>
+	Visualise the behaviors of the 
+	<a href="http://en.wikipedia.org/wiki/K-means_clustering">K-means clustering algorithm</a>
+	by JavaScript.
+      </p>
+      <canvas id="main-canvas" width="600" height="400"></canvas>
+      <div class="field">
+	Points: <input id="numPoints" type="text" value="100">
+      </div>
+      <div class="field">
+	K: <input id="numClusters" type="text" value="5">
+      </div>
+      <input type="button" value="Initialize" onclick="init()">
+      <input type="button" value="Step" onclick="update()">
+
+      <h2>Usage</h2>
+      <ol>
+	<li>Set <strong>Points</strong> field to the number of data.</li>
+	<li>Set <strong>K</strong> field to the number of clusters.</li>
+	<li>Press <strong>Initialize</strong> button to initialize the data.</li>
+	<li>Press <strong>Step</strong> button to execute stepwise.</li>
+      </ol>
+
+      This is inspired by <a href="http://tech.nitoyon.com/ja/blog/2009/04/09/kmeans-visualise/">this article</a>
+      (ActionScript implementation).
+    </div>
+  </body>
+</html>
+
